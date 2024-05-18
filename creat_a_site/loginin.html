@@ -1,0 +1,50 @@
+<html dir="rtl">
+ <head><title> java script </title> 
+ <script type="text/javascript">
+  window.alert(" هل تريد ادخال بياناتك لتوصيل طلبك  "); 
+ function information() 
+ { 
+ var name=info.name.value; 
+ var job=info.job.value; 
+ var add=info.address.value; 
+ var comm=info.command.value; 
+ document.writeln("<table cellspasing=\"0\" cellpadding=\"5\" border=\"1\" width=\"80%\" align=\"center\" dir=\"rtl\" bgcolor=\"#eaeaea\" bordercolor=\"#000000\">"); 
+ document.writeln("<caption><h3> المعلومات التي سجلتها لدینا </h3></caption>");
+ document.writeln("<tbody>"); 
+ document.writeln("<tr><td width=\"30\"><b> الأســــم : </b></td><td>" + name + "</td></tr>"); 
+ document.writeln("<tr><td width=\"30\"><b> المهنـــة :</b></td><td> " + job + "</td></tr>"); 
+ document.writeln("<tr><td width=\"30\"> <b>العنــوان : </b></td><td> " + add + "</td></tr>"); 
+ document.writeln("<tr><td width=\"30\"> <b>ملاحظات : </b></td><td> " + comm + "</td></tr>"); 
+ document.writeln("</tbody>"); 
+ document.writeln("</table>"); 
+ } 
+ </script> 
+ </head> 
+<body >
+ <form name="info" action=""> 
+ <table cellspacing="0" cellpadding="5" border="0" width="80%" align="center"> 
+ <tbody> 
+ <tr> 
+ <td>الأســــم : </td> 
+ <td><input type="text" name="name" value="" size="31"></td> 
+ </tr> 
+ <tr> 
+ <td>العنـــوان : </td> 
+ <td> <input type="text" name="address" value="" size="45"></td> 
+ </tr> 
+ <tr> 
+ <td>المهنـــة : </td> 
+ <td><input type="text" name="job" value="" size="20"></td> 
+ </tr> 
+ <tr> 
+ <td>ملاحظـات : </td> 
+ <td><textarea name="command" rows="4" cols="50"></textarea></td> 
+ </tr> 
+ <tr> 
+ <td colspan="2" align="center"> 
+ </br> 
+ <input type="button" name="show" value="اعرض "
+ onclick="information()"><input type="reset" name="del" value="مسح  ">
+ </td> 
+ </tr> 
+ </tbody> </table></body></html>
